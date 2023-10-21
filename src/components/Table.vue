@@ -161,26 +161,35 @@ export default {
             </v-toolbar>
             <v-list lines="two" subheader>
               <v-list-subheader> کنترل‌های کاربر</v-list-subheader>
-              <v-list-item title="فیلتر کردن محتوا"
-                subtitle="سطح فیلتر محتوا را برای محدود کردن برنامه‌های قابل دانلود تنظیم کنید"></v-list-item>
-              <v-list-item title="رمز عبور"
-                subtitle="برای خرید به رمز عبور نیاز داشته باشید یا برای محدود کردن خرید از رمز عبور استفاده کنید"></v-list-item>
+              <v-list-item 
+                title="فیلتر کردن محتوا"
+                subtitle="سطح فیلتر محتوا را برای محدود کردن برنامه‌های قابل دانلود تنظیم کنید">
+              </v-list-item>
+              <v-list-item 
+                title="رمز عبور"
+                subtitle="برای خرید به رمز عبور نیاز داشته باشید یا برای محدود کردن خرید از رمز عبور استفاده کنید">
+              </v-list-item>
             </v-list>
             <v-divider></v-divider>
             <v-list lines="two" subheader>
               <v-list-subheader>عمومی</v-list-subheader>
-              <v-list-item title="اطلاعیه"
+              <v-list-item 
+                title="اطلاعیه"
                 subtitle="به‌روزرسانی‌های برنامه‌ها یا بازی‌هایی را که دانلود کرده‌ام به من اطلاع دهید">
                 <template v-slot:prepend>
                   <v-checkbox v-model="notifications"></v-checkbox>
                 </template>
               </v-list-item>
-              <v-list-item title="صدا" subtitle="به روز رسانی خودکار برنامه‌ها در هر زمان، ممکن است هزینه داده اعمال شود">
+              <v-list-item 
+                title="صدا" 
+                subtitle="به روز رسانی خودکار برنامه‌ها در هر زمان، ممکن است هزینه داده اعمال شود">
                 <template v-slot:prepend>
                   <v-checkbox v-model="sound"></v-checkbox>
                 </template>
               </v-list-item>
-              <v-list-item title="افزودن خودکار ویجت‌ها" subtitle="ویجت‌های صفحه اصلی را به صورت خودکار اضافه کنید">
+              <v-list-item 
+                title="افزودن خودکار ویجت‌ها" 
+                subtitle="ویجت‌های صفحه اصلی را به صورت خودکار اضافه کنید">
                 <template v-slot:prepend>
                   <v-checkbox v-model="widgets"></v-checkbox>
                 </template>
